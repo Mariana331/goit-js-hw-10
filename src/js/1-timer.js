@@ -58,14 +58,13 @@ startBtn.addEventListener(`click`, () => {
 });
 
 function updateTimer(days, hours, minutes, seconds) {
-  daysElem.textContent = days;
+  daysElem.textContent = addLeadingZero(days);
   hoursElem.textContent = addLeadingZero(hours);
   minutesElem.textContent = addLeadingZero(minutes);
   secondsElem.textContent = addLeadingZero(seconds);
 }
 
 function convertMs(ms) {
-  // Number of milliseconds per unit of time
   const second = 1000;
   const minute = second * 60;
   const hour = minute * 60;
