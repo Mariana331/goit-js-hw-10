@@ -11,7 +11,6 @@ formElem.addEventListener(`submit`, event => {
 
   createPromise(delay, state)
     .then(delay => {
-      пше;
       iziToast.success({
         title: '✅ Success',
         message: `Fulfilled promise in ${delay}ms`,
